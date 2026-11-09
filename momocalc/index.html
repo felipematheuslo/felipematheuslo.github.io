@@ -18,9 +18,10 @@
         <span>MomoCalc</span>
       </a>
       <nav class="header-nav">
-        <a href="../privacidade.html" class="nav-link">← Legal &amp; Privacy Hub</a>
+        <a href="../privacidade.html" class="nav-link">← Legal Hub</a>
         <a href="./index.html" class="nav-link active">Privacy Policy</a>
         <a href="./termos.html" class="nav-link">Terms of Service</a>
+        <a href="#trader" class="nav-link">Trader Info</a>
         <a href="#dpo" class="nav-link">Contact</a>
       </nav>
     </div>
@@ -71,10 +72,12 @@
         <ul class="toc-list">
           <li><a href="#overview" class="toc-link">1. Core Commitment &amp; Architecture</a></li>
           <li><a href="#no-collection" class="toc-link">2. Information We Do NOT Collect</a></li>
-          <li><a href="#admob" class="toc-link">3. Advertising &amp; Third-Party Services (Google AdMob)</a></li>
-          <li><a href="#permissions" class="toc-link">4. Device Permissions &amp; Local Preferences</a></li>
-          <li><a href="#children" class="toc-link">5. Children's Privacy (COPPA)</a></li>
-          <li><a href="#dpo" class="toc-link">6. Data Protection Officer (DPO) &amp; Contact</a></li>
+          <li><a href="#admob" class="toc-link">3. Advertising (Google AdMob)</a></li>
+          <li><a href="#permissions" class="toc-link">4. Permissions &amp; Local Storage</a></li>
+          <li><a href="#retention" class="toc-link">5. Data Retention &amp; Deletion</a></li>
+          <li><a href="#children" class="toc-link">6. Children's Privacy (COPPA)</a></li>
+          <li><a href="#trader" class="toc-link" style="color: var(--color-green); font-weight: 700;">7. Trader &amp; Merchant Status</a></li>
+          <li><a href="#dpo" class="toc-link">8. DPO &amp; Contact Information</a></li>
         </ul>
       </nav>
 
@@ -126,19 +129,49 @@
         </ul>
       </section>
 
-      <!-- 5. Children's Privacy -->
-      <section id="children">
-        <h2>5. Children's Privacy (COPPA)</h2>
+      <!-- 5. Data Retention & Deletion -->
+      <section id="retention">
+        <h2>5. Data Retention &amp; User Data Deletion</h2>
         <p>
-          The application is an adult utility designed for mobile money calculations and is not targeted at children under the age of 13. We do not knowingly collect personal data from minors.
+          Because MomoCalc operates on a 100% offline-first architecture with zero personal accounts and zero backend cloud storage:
+        </p>
+        <ul>
+          <li><strong>No Server Retention:</strong> The Developer retains no personal records, transaction amounts, calculations, or financial data on any server;</li>
+          <li><strong>Local Device Data Deletion:</strong> The only stored information is local device UI preferences (such as your last chosen operator or country code) saved in Android <code>SharedPreferences</code>. You can delete this data at any time by clearing the application storage via <em>Android Settings &gt; Apps &gt; MomoCalc &gt; Storage &gt; Clear Data</em>, or by simply uninstalling the application from your device.</li>
+        </ul>
+      </section>
+
+      <!-- 6. Children's Privacy -->
+      <section id="children">
+        <h2>6. Children's Privacy (COPPA)</h2>
+        <p>
+          The application is a financial utility designed for adult mobile money calculations and is not targeted at children under the age of 13. We do not knowingly collect personal data from minors.
         </p>
       </section>
 
-      <!-- 6. DPO & Contact -->
-      <section id="dpo">
-        <h2>6. Data Protection Officer (DPO) &amp; Contact Information</h2>
+      <!-- 7. Trader Identification -->
+      <section id="trader">
+        <h2>7. Trader &amp; Developer Identification (Play Store &amp; EU DSA)</h2>
         <p>
-          For inquiries regarding this Privacy Policy or data protection, contact our Data Protection Officer directly:
+          In accordance with Google Play Trader Status transparency rules and Article 24 of the EU Digital Services Act:
+        </p>
+        <div class="callout callout-green">
+          <ul style="margin-bottom: 0; padding-left: 0; list-style: none;">
+            <li style="margin-bottom: 4px;"><strong>Developer / Trader:</strong> Felipe Matheus Laurindo de Oliveira (Sole Proprietor)</li>
+            <li style="margin-bottom: 4px;"><strong>Package Name:</strong> <code>com.felipelaurindo.mobilemoneycalc</code></li>
+            <li style="margin-bottom: 4px;"><strong>Location:</strong> João Pessoa, Paraíba, Brazil</li>
+            <li style="margin-bottom: 4px;"><strong>Email:</strong> <a href="mailto:felipe.m.laurindo@gmail.com" style="color: var(--color-green); font-weight: 700; text-decoration: underline;">felipe.m.laurindo@gmail.com</a></li>
+            <li style="margin-bottom: 4px;"><strong>Commercial WhatsApp / Phone:</strong> <a href="https://wa.me/5511912460542" target="_blank" rel="noopener noreferrer" style="color: var(--color-green); font-weight: 700; text-decoration: underline;">+55 (11) 91246-0542</a></li>
+            <li style="margin-bottom: 0;"><strong>Terms of Service:</strong> <a href="./termos.html" style="color: var(--color-green); font-weight: 700; text-decoration: underline;">Full Trader Terms of Service</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 8. DPO & Contact -->
+      <section id="dpo">
+        <h2>8. Data Protection Officer (DPO) &amp; Contact Information</h2>
+        <p>
+          For formal inquiries regarding this Privacy Policy or personal data protection rights under LGPD or GDPR:
         </p>
 
         <div class="callout callout-orange">

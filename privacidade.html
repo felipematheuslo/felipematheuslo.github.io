@@ -30,17 +30,18 @@
 
     <!-- Seção de Apresentação / Hero -->
     <section class="hero-section">
-      <div class="hero-tag">Transparência & Conformidade Legal</div>
-      <h1 class="hero-title">Políticas de Privacidade e Proteção de Dados</h1>
+      <div class="hero-tag">Transparência, Privacidade &amp; Termos Contratuais</div>
+      <h1 class="hero-title">Central de Privacidade e Termos de Serviço</h1>
       <p class="hero-description">
-        Esta central reúne os termos, diretrizes de privacidade e procedimentos de proteção de dados de todos os nossos aplicativos móveis e serviços digitais, em estrito cumprimento à legislação brasileira e às diretrizes internacionais.
+        Esta central reúne as políticas de proteção de dados (LGPD/GDPR), termos e condições de serviço e declarações formais de comerciante (Google Play Trader Status / DSA Art. 24) de todas as nossas aplicações móveis em produção.
       </p>
 
       <div class="hero-badges">
-        <span class="badge badge-green">✓ LGPD (Lei nº 13.709/2018)</span>
+        <span class="badge badge-green">✓ LGPD (Lei Federal nº 13.709/2018)</span>
         <span class="badge badge-green">✓ Marco Civil da Internet (Lei nº 12.965/2014)</span>
+        <span class="badge badge-green">✓ Código de Defesa do Consumidor (Lei nº 8.078/1990)</span>
+        <span class="badge badge-green">✓ Google Play Trader Compliance (DSA Art. 24)</span>
         <span class="badge">Google Play Data Safety</span>
-        <span class="badge">Apple App Store (Guideline 5.1)</span>
       </div>
     </section>
 
@@ -51,14 +52,14 @@
           Selecione o Aplicativo
         </h2>
         <span style="font-size: 0.85rem; color: var(--stone-500); font-weight: 500;">
-          Portfólio de Apps
+          Aplicativos em Produção
         </span>
       </div>
       <p style="color: var(--stone-600); font-size: 0.94rem; margin-bottom: 20px;">
-        Clique em um aplicativo abaixo para ler a política de privacidade detalhada ou solicitar a exclusão de dados e contas.
+        Selecione um aplicativo para consultar seus termos contratuais de serviço, política de proteção de dados ou exercer seus direitos de titular.
       </p>
 
-      <div class="apps-grid">
+      <div class="apps-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
 
         <!-- Card: Mamão com Açúcar -->
         <article class="app-card">
@@ -68,11 +69,18 @@
             </div>
             <div>
               <h3 class="app-name">Mamão com Açúcar</h3>
-              <span class="app-category">Mapeamento Urbano &amp; Botânica</span>
+              <span class="app-category">Mapeamento Urbano &amp; Botânica Comunitária</span>
+              <div style="margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap;">
+                <span class="badge badge-green" style="font-size: 0.72rem; padding: 2px 8px;">✓ Na Loja</span>
+                <span class="badge" style="font-size: 0.72rem; padding: 2px 8px;">Flutter v2.0+</span>
+              </div>
             </div>
           </div>
           <div class="app-card-body">
-            Mapeamento colaborativo de árvores frutíferas em logradouros públicos urbanos, catálogo de espécies nativas por biomas e guia de colheita.
+            Plataforma colaborativa para catálogo geoespacial e monitoramento fenológico de árvores frutíferas em logradouros públicos urbanos, com guia botânico de espécies nativas por biomas.
+            <div style="margin-top: 8px; font-size: 0.8rem; color: var(--stone-500); font-family: monospace;">
+              ID: com.felipelaurindo.mamaocomacucar
+            </div>
           </div>
           <div class="app-card-actions">
             <a href="./mamao-com-acucar/index.html" class="btn btn-primary">
@@ -82,7 +90,7 @@
               Termos de Serviço
             </a>
             <a href="./mamao-com-acucar/index.html#exclusao" class="app-card-sublink danger">
-              Exclusão de Conta &amp; Dados
+              Solicitar Exclusão de Conta &amp; Dados
             </a>
           </div>
         </article>
@@ -95,11 +103,18 @@
             </div>
             <div>
               <h3 class="app-name">MomoCalc</h3>
-              <span class="app-category">Calculadora Financeira (África)</span>
+              <span class="app-category">Calculadora de Tarifas (Mobile Money)</span>
+              <div style="margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap;">
+                <span class="badge badge-green" style="font-size: 0.72rem; padding: 2px 8px;">✓ Na Loja</span>
+                <span class="badge" style="font-size: 0.72rem; padding: 2px 8px;">Android Nativo</span>
+              </div>
             </div>
           </div>
           <div class="app-card-body">
-            Calculadora reversa independente para tarifas de mobile money (M-Pesa, Airtel, MTN), tarifas de saque e tributos com execução 100% offline.
+            Calculadora utilitária independente para estimativa reversa de tarifas, taxas de saque em agentes e encargos tributários de transferências móveis (M-Pesa, Airtel, MTN), operando 100% offline.
+            <div style="margin-top: 8px; font-size: 0.8rem; color: var(--stone-500); font-family: monospace;">
+              ID: com.felipelaurindo.mobilemoneycalc
+            </div>
           </div>
           <div class="app-card-actions">
             <a href="./momocalc/index.html" class="btn btn-primary">
@@ -108,35 +123,8 @@
             <a href="./momocalc/termos.html" class="btn btn-outline">
               Termos de Serviço
             </a>
-            <span class="app-card-sublink">
-              Operação 100% offline (sem conta)
-            </span>
-          </div>
-        </article>
-
-        <!-- Card: Brete Ferramentas -->
-        <article class="app-card">
-          <div class="app-card-header">
-            <div class="app-icon">
-              <img src="./assets/brete-icon.png" alt="Brete Ferramentas">
-            </div>
-            <div>
-              <h3 class="app-name">Brete Ferramentas</h3>
-              <span class="app-category">Cotações &amp; Utilitários Pecuários</span>
-            </div>
-          </div>
-          <div class="app-card-body">
-            Cotação diária da arroba do boi gordo, vaca e novilha por praça, calculadoras de reposição (relação de troca, ágio) e simuladores de curral.
-          </div>
-          <div class="app-card-actions">
-            <a href="./brete-ferramentas/index.html" class="btn btn-primary">
-              Política de Privacidade
-            </a>
-            <a href="./brete-ferramentas/termos.html" class="btn btn-outline">
-              Termos de Serviço
-            </a>
-            <span class="app-card-sublink">
-              Operação 100% offline (sem conta)
+            <span class="app-card-sublink" style="color: var(--color-green); font-weight: 500;">
+              ✓ Operação 100% Offline (Sem Coleta)
             </span>
           </div>
         </article>
@@ -175,9 +163,20 @@
             +55 (11) 91246-0542
           </a>
         </p>
-        <p style="margin-bottom: 0;">
+        <p style="margin-bottom: 6px;">
           <strong>Editor Google AdMob (Publisher ID):</strong> <code>pub-7364145551999763</code>
         </p>
+        <p style="margin-bottom: 4px; font-weight: 700; color: var(--stone-900);">
+          Aplicativos Ativos &amp; Identificadores Oficiais no Google Play:
+        </p>
+        <ul style="margin-bottom: 0; padding-left: 20px; font-size: 0.9rem; color: var(--stone-800);">
+          <li style="margin-bottom: 4px;">
+            <strong>Mamão com Açúcar:</strong> <code>com.felipelaurindo.mamaocomacucar</code>
+          </li>
+          <li>
+            <strong>MomoCalc: Mobile Money Fees:</strong> <code>com.felipelaurindo.mobilemoneycalc</code>
+          </li>
+        </ul>
       </div>
 
       <div style="font-size: 0.92rem; color: var(--stone-600); margin-top: 14px;">
@@ -236,7 +235,6 @@
         <a href="#apps" class="footer-link">Aplicativos</a>
         <a href="./mamao-com-acucar/termos.html" class="footer-link">Mamão com Açúcar</a>
         <a href="./momocalc/termos.html" class="footer-link">MomoCalc</a>
-        <a href="./brete-ferramentas/termos.html" class="footer-link">Brete Ferramentas</a>
         <a href="#trader-status" class="footer-link">Status de Comerciante</a>
         <a href="#dpo" class="footer-link">Canal DPO</a>
       </div>
