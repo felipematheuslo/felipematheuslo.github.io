@@ -3,163 +3,660 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Central de Privacidade e Termos de Uso — Aplicativos</title>
-  <meta name="description" content="Central unificada de transparência, privacidade e proteção de dados pessoais (LGPD) dos aplicativos desenvolvidos por Felipe Matheus.">
-  <link rel="stylesheet" href="./assets/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+  <title>Felipe Matheus — Software Engineer & Systems Analyst</title>
+  <meta name="description" content="Engenheiro de Computação (UFMS). Software Engineer com sólida atuação em desenvolvimento mobile (Flutter/Kotlin), front-end corporativo (Vue.js/TypeScript), backend em Java/SQL e sistemas offline-first.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Felipe Matheus — Software Engineer & Systems Analyst">
+  <meta property="og:description" content="Engenheiro de Computação (UFMS). Mobile (Flutter/Kotlin), Front-End (Vue/TypeScript), Backend Java e arquiteturas offline-first com produtos em produção.">
+  <meta property="og:image" content="https://felipematheuslo.github.io/assets/felipe-matheus.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://felipematheuslo.github.io/">
+
+  <link rel="stylesheet" href="./assets/portfolio.css">
 </head>
 <body>
 
-  <!-- Barra de Navegação -->
-  <header class="site-header">
-    <div class="header-container">
-      <a href="./index.html" class="brand-link">
-        <span class="brand-icon">🛡️</span>
-        <span>Central de Privacidade</span>
-      </a>
-      <nav class="header-nav">
-        <a href="#apps" class="nav-link active">Aplicativos</a>
-        <a href="#dpo" class="nav-link">Canal DPO</a>
-      </nav>
-    </div>
-  </header>
+  <div class="site-container">
 
-  <!-- Conteúdo Principal -->
-  <main class="main-content hub-container">
-
-    <!-- Seção de Apresentação / Hero -->
-    <section class="hero-section">
-      <div class="hero-tag">Transparência & Conformidade Legal</div>
-      <h1 class="hero-title">Políticas de Privacidade e Proteção de Dados</h1>
-      <p class="hero-description">
-        Esta central reúne os termos, diretrizes de privacidade e procedimentos de proteção de dados de todos os nossos aplicativos móveis e serviços digitais, em estrito cumprimento à legislação brasileira e às diretrizes internacionais.
-      </p>
-
-      <div class="hero-badges">
-        <span class="badge badge-green">✓ LGPD (Lei nº 13.709/2018)</span>
-        <span class="badge badge-green">✓ Marco Civil da Internet (Lei nº 12.965/2014)</span>
-        <span class="badge">Google Play Data Safety</span>
-        <span class="badge">Apple App Store (Guideline 5.1)</span>
-      </div>
-    </section>
-
-    <!-- Catálogo de Aplicativos -->
-    <section id="apps">
-      <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 8px;">
-        <h2 style="font-size: 1.4rem; font-weight: 800; color: var(--stone-900); letter-spacing: -0.02em;">
-          Selecione o Aplicativo
-        </h2>
-        <span style="font-size: 0.85rem; color: var(--stone-500); font-weight: 500;">
-          Portfólio de Apps
-        </span>
-      </div>
-      <p style="color: var(--stone-600); font-size: 0.94rem; margin-bottom: 20px;">
-        Clique em um aplicativo abaixo para ler a política de privacidade detalhada ou solicitar a exclusão de dados e contas.
-      </p>
-
-      <div class="apps-grid">
-
-        <!-- Card: Mamão com Açúcar -->
-        <article class="app-card featured">
-          <div class="app-card-header">
-            <div class="app-icon">
-              <img src="./assets/mascot.png" alt="Mascote Mamão com Açúcar">
-            </div>
-            <div>
-              <h3 class="app-name">Mamão com Açúcar</h3>
-              <span class="app-category">Mapeamento Urbano & Botânica Comunitária</span>
-            </div>
-          </div>
-          <div class="app-card-body">
-            Aplicativo colaborativo para localização, catálogo e monitoramento do ciclo de maturação de árvores frutíferas em logradouros públicos urbanos.
-          </div>
-          <div class="app-card-actions">
-            <a href="./mamao-com-acucar/index.html" class="btn btn-primary">
-              Política de Privacidade →
-            </a>
-            <a href="./mamao-com-acucar/termos.html" class="btn btn-outline">
-              Termos de Uso →
-            </a>
-            <a href="./mamao-com-acucar/index.html#exclusao" class="btn btn-danger-outline">
-              Solicitar Exclusão de Conta & Dados
-            </a>
-          </div>
-        </article>
-
-        <!-- Card: Espaço para Novo App (ex: Brete) -->
-        <article class="app-card">
-          <div class="app-card-header">
-            <div class="app-icon neutral">📦</div>
-            <div>
-              <h3 class="app-name">Novos Aplicativos</h3>
-              <span class="app-category">Portfólio em Expansão</span>
-            </div>
-          </div>
-          <div class="app-card-body">
-            As políticas de privacidade, termos de serviço e canais de proteção de dados de outros lançamentos serão publicados diretamente nesta central.
-          </div>
-          <div class="app-card-actions">
-            <button class="btn btn-outline" disabled style="opacity: 0.65; cursor: not-allowed;">
-              Em Atualização
-            </button>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- Seção de Contato e DPO Unificado -->
-    <section id="dpo" class="policy-card" style="margin-top: 10px;">
-      <h2 style="margin-top: 0; padding-bottom: 8px;">
-        ⚖️ Encarregado pelo Tratamento de Dados Pessoais (DPO)
-      </h2>
-      <p>
-        Em atenção ao <strong>Artigo 41 da Lei Geral de Proteção de Dados (LGPD)</strong>, mantemos um canal unificado e direto para que usuários de qualquer um de nossos aplicativos possam exercer seus direitos de titular, tirar dúvidas ou apresentar requerimentos formais.
-      </p>
-
-      <div class="callout callout-orange">
-        <div class="callout-title">
-          <span>📬</span> Canal Oficial de Privacidade & DPO
+    <!-- ====================================================================
+         HEADER EXECUTIVO
+         ==================================================================== -->
+    <header class="site-header">
+      <div class="profile-summary">
+        <img src="./assets/felipe-matheus.png" alt="Felipe Matheus" class="profile-avatar">
+        <div class="profile-text">
+          <span class="profile-name">Felipe Matheus Laurindo de Oliveira</span>
+          <span class="profile-headline">Software Engineer & Systems Analyst</span>
+          <span class="profile-location">João Pessoa, PB · Disponível para atuação 100% Remota</span>
         </div>
-        <p style="margin-bottom: 6px;">
-          <strong>Encarregado (DPO):</strong> Felipe Matheus Laurindo de Oliveira
-        </p>
-        <p style="margin-bottom: 8px;">
-          Para exercer qualquer direito previsto no <strong>Artigo 18 da LGPD</strong> (como confirmação de tratamento, acesso, correção ou eliminação total de dados cadastrais), envie uma mensagem com o nome do aplicativo e sua solicitação:
-        </p>
-        <p style="margin-bottom: 0;">
-          <strong>E-mail de Contato:</strong> 
-          <a href="mailto:felipe.m.laurindo@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20Privacidade%20-%20LGPD" style="color: var(--color-brand-dark); font-weight: 700; text-decoration: underline;">
-            felipe.m.laurindo@gmail.com
-          </a>
-        </p>
       </div>
 
-      <div style="font-size: 0.9rem; color: var(--stone-600); margin-top: 14px;">
-        <p style="margin-bottom: 6px;">
-          <strong>Prazo legal de atendimento:</strong> Todas as solicitações são analisadas e respondidas no prazo máximo legal de até <strong>15 (quinze) dias</strong> úteis (Art. 19, II da LGPD).
-        </p>
-        <p style="margin-bottom: 0;">
-          Você também tem o direito de realizar peticionamentos ou denúncias diretamente junto à <strong>Autoridade Nacional de Proteção de Dados (ANPD)</strong> através do portal oficial <a href="https://www.gov.br/anpd" target="_blank" rel="noopener noreferrer" style="color: var(--color-brand); text-decoration: underline;">gov.br/anpd</a>.
-        </p>
+      <div class="header-controls">
+        <button id="themeToggleBtn" class="theme-button" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+          <svg id="sunIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg id="moonIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- ====================================================================
+         HERO / INTRODUÇÃO
+         ==================================================================== -->
+    <section class="hero-block">
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        <span>Aberto a oportunidades remotas & contratações globais</span>
+      </div>
+
+      <h1 class="hero-statement">
+        Engenharia de software ponta a ponta: interfaces de alta performance e sistemas resilientes.
+      </h1>
+
+      <p class="hero-lead">
+        Sou Engenheiro de Computação graduado pela <strong>Universidade Federal de Mato Grosso do Sul (UFMS)</strong>. Atuo no desenvolvimento de <strong>aplicativos móveis multiplataforma (Flutter, Kotlin)</strong>, <strong>interfaces web ricas em dados (Vue.js, TypeScript)</strong> e <strong>serviços corporativos de backend em Java e SQL</strong>, com forte foco em arquiteturas offline-first e experiência do usuário (UX).
+      </p>
+
+      <p class="hero-lead">
+        Na <strong>Redesoft</strong>, atuo na sustentação e evolução do ERP B2Click (utilizado em mais de 200 postos de combustível no Brasil), sendo o responsável técnico pelo Módulo de Compras (adotado pela alta diretoria de redes clientes com ~200 filiais), rotinas de conciliação financeira de cartões (Cielo, Rede, Getnet) e interface técnica contínua entre Product Owners e equipe de desenvolvimento. Em paralelo, mantenho uma esteira ativa de produtos próprios publicados na Google Play Store com tração orgânica comprovada (+140k views em post viral no LinkedIn).
+      </p>
+
+      <div class="hero-contact-bar">
+        <a href="https://www.linkedin.com/in/felipe-laurindo" target="_blank" rel="noopener noreferrer" class="btn-contact highlight">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.66 1.66 0 1 0 0 3.32 1.66 1.66 0 0 0 0-3.32Z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+
+        <a href="https://github.com/felipematheuslo" target="_blank" rel="noopener noreferrer" class="btn-contact">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+
+        <a href="https://wa.me/5567992391778" target="_blank" rel="noopener noreferrer" class="btn-contact">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span>(67) 99239-1778</span>
+        </a>
+
+        <button onclick="copyEmailAddress()" class="btn-contact" id="btnCopyEmail" title="Clique para copiar">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="16" x="2" y="4" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+          <span>felipe.m.laurindo@gmail.com</span>
+        </button>
       </div>
     </section>
 
-  </main>
+    <!-- ====================================================================
+         PROJETOS & APLICATIVOS (COM FILTRO DINÂMICO)
+         ==================================================================== -->
+    <section class="section-area">
+      <div class="section-title-row">
+        <h2 class="section-heading">Produtos & Aplicativos em Produção</h2>
+        <span class="section-counter">4 projetos autorais ativos</span>
+      </div>
 
-  <!-- Rodapé -->
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-links">
-        <a href="#apps" class="footer-link">Aplicativos</a>
-        <a href="./mamao-com-acucar/index.html" class="footer-link">Mamão com Açúcar</a>
-        <a href="#dpo" class="footer-link">Canal DPO / Privacidade</a>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">Todos (4)</button>
+        <button class="filter-btn" data-filter="mobile">Mobile (Flutter & Android)</button>
+        <button class="filter-btn" data-filter="agrotech">AgroTech & Offline-First</button>
+        <button class="filter-btn" data-filter="web">Web SaaS</button>
       </div>
+
+      <div class="projects-list">
+
+        <!-- 1. Mamão com Açúcar -->
+        <article class="project-card" data-category="mobile web">
+          <div class="project-card-header">
+            <div class="project-brand-box">
+              <img src="./assets/mascot.png" alt="Mascote Mamão com Açúcar" class="project-app-icon">
+              <div class="project-titles">
+                <h3 class="project-app-name">Mamão com Açúcar</h3>
+                <span class="project-tagline">Mapeamento Geoespacial Botânico Colaborativo</span>
+              </div>
+            </div>
+            <span class="platform-pill">Google Play v2.0.0 & Web</span>
+          </div>
+
+          <p class="project-body-text">
+            Aplicativo colaborativo para localização, catálogo e monitoramento do ciclo de maturação de árvores frutíferas em logradouros públicos. Reescrito do zero em <strong>Flutter (Dart) com motor gráfico Impeller</strong>, aposentando bases legadas separadas em prol de um único repositório unificado com paridade total de recursos.
+          </p>
+
+          <ul class="project-bullets">
+            <li><strong>Engine Gráfica & Mapas a 60 FPS:</strong> Renderização com tile caching offline via <code>flutter_map</code> 8 (OpenStreetMap e Satélite Esri), clustering dinâmico e cálculo de proximidade geodésica pela Fórmula de Haversine.</li>
+            <li><strong>Guia Botânico & Gamificação:</strong> Catálogo estruturado com 71 espécies nativas por biomas brasileiros, Welcome Screen estilo Duolingo, insígnias de conquistas e isolamento adaptativo de geolocalização no navegador.</li>
+            <li><strong>Tração & Validação:</strong> Post técnico viralizando no LinkedIn com <strong>mais de 140.000 visualizações orgânicas</strong> e usuários cadastrando centenas de árvores em diversas cidades.</li>
+          </ul>
+
+          <div class="project-footer">
+            <div class="tech-tags-cloud">
+              <span class="tag-badge">Flutter 3</span>
+              <span class="tag-badge">Dart</span>
+              <span class="tag-badge">Riverpod</span>
+              <span class="tag-badge">OpenStreetMap</span>
+              <span class="tag-badge">Firebase Auth & Firestore</span>
+              <span class="tag-badge">Impeller Engine</span>
+            </div>
+
+            <div class="project-cta-links">
+              <a href="https://play.google.com/store/apps/details?id=com.felipelaurindo.mamaocomacucar" target="_blank" rel="noopener noreferrer" class="cta-link">
+                <span>Google Play Store</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+              </a>
+              <a href="https://mamaocomacucar.vercel.app/" target="_blank" rel="noopener noreferrer" class="cta-link">
+                <span>Acessar Web</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/posts/felipe-laurindo_tem-um-p%C3%A9-de-pitanga-carregado-a-duas-esquinas-ugcPost-7504326966708326400-RpGV/" target="_blank" rel="noopener noreferrer" class="cta-link">
+                <span>Post LinkedIn (+140k)</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Plataforma BRETE -->
+        <article class="project-card" data-category="agrotech web mobile">
+          <div class="project-card-header">
+            <div class="project-brand-box">
+              <div class="project-app-icon" style="display:flex;align-items:center;justify-content:center;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20"/><path d="m17 5-5-3-5 3"/><path d="m17 19-5 3-5-3"/><path d="M2 12h20"/>
+                </svg>
+              </div>
+              <div class="project-titles">
+                <h3 class="project-app-name">Plataforma BRETE & Agro</h3>
+                <span class="project-tagline">Manejo Pecuário Comercial & Arquitetura Offline-First</span>
+              </div>
+            </div>
+            <span class="platform-pill">Fazenda Santa Tereza (MS)</span>
+          </div>
+
+          <p class="project-body-text">
+            Software de gestão e pesagem concebido na lida prática da Fazenda Santa Tereza para pecuária comercial de corte (recria e engorda). Projetado especificamente para o ambiente de curral, onde a conexão de internet é inexistente e o animal permanece contido no tronco por apenas 5 a 10 segundos.
+          </p>
+
+          <ul class="project-bullets">
+            <li><strong>Arquitetura Offline-First com IndexedDB:</strong> O front-end grava 100% dos dados localmente no navegador via <strong>Dexie.js</strong> em sub-milissegundos, calculando instantaneamente o Ganho Médio Diário (GMD) histórico e sincronizando com o Firebase ao retornar à sede. Cortou o tempo operacional do lote em 50% e extinguiu anotações em papel.</li>
+            <li><strong>Auditoria Zootécnica & ROI Comprovado:</strong> Relatórios de pesagem em PDF gerados pelo BRETE comprovaram déficit de ganho de peso em novilhas que testavam uma nova marca de sal mineral (Só Sal vs. Tortuga). O laudo técnico fundamentou a negociação do produtor, que conquistou a <strong>bonificação de 100 sacos gratuitos</strong> de suplemento.</li>
+            <li><strong>Evolução Multiplataforma:</strong> Migração de canivete suíço pecuário em Flutter (cotação diária da arroba via GitHub Actions serverless gratuita, calculadora de ágio de reposição e simulador de rentabilidade do lote).</li>
+          </ul>
+
+          <div class="project-footer">
+            <div class="tech-tags-cloud">
+              <span class="tag-badge">Offline-First</span>
+              <span class="tag-badge">Vue 3</span>
+              <span class="tag-badge">Dexie.js (IndexedDB)</span>
+              <span class="tag-badge">Flutter</span>
+              <span class="tag-badge">Firebase</span>
+              <span class="tag-badge">GitHub Actions</span>
+            </div>
+
+            <div class="project-cta-links">
+              <a href="#experiencia" class="cta-link">
+                <span>Ver experiência na fazenda ↓</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. MomoCalc -->
+        <article class="project-card" data-category="mobile">
+          <div class="project-card-header">
+            <div class="project-brand-box">
+              <img src="./assets/momocalc-icon.png" alt="MomoCalc App Icon" class="project-app-icon">
+              <div class="project-titles">
+                <h3 class="project-app-name">MomoCalc</h3>
+                <span class="project-tagline">Calculadora Reversa de Tarifas Mobile Money (África)</span>
+              </div>
+            </div>
+            <span class="platform-pill">Google Play Store</span>
+          </div>
+
+          <p class="project-body-text">
+            Utilitário financeiro desenvolvido para atender milhões de pessoas que dependem de pagamentos móveis na África Subsaariana (Quênia, Tanzânia, Uganda e Ruanda), abrangendo redes como <strong>Safaricom M-Pesa, Vodacom, Airtel Money e MTN MoMo</strong>.
+          </p>
+
+          <ul class="project-bullets">
+            <li><strong>Cálculo Reverso Instantâneo:</strong> Determina o valor exato que o remetente deve transferir para que o beneficiário consiga sacar a quantia líquida desejada após desconto escalonado de taxas de agentes e retenções fiscais governamentais (Govt Levy).</li>
+            <li><strong>Teclado Numérico Nativo Customizado:</strong> Desenvolvido diretamente na view para eliminar o atraso de abertura e transição do teclado do sistema operacional, garantindo cálculo em tempo real sem latência.</li>
+            <li><strong>Localização e Clean Architecture:</strong> Implementado em Kotlin nativo com Clean Architecture, localização completa de strings para <strong>Swahili (Kiswahili)</strong> e Inglês, e funcionamento 100% offline.</li>
+          </ul>
+
+          <div class="project-footer">
+            <div class="tech-tags-cloud">
+              <span class="tag-badge">Android Nativo</span>
+              <span class="tag-badge">Kotlin</span>
+              <span class="tag-badge">Jetpack Compose</span>
+              <span class="tag-badge">Clean Architecture</span>
+              <span class="tag-badge">Localização Swahili</span>
+            </div>
+
+            <div class="project-cta-links">
+              <a href="https://play.google.com/store/apps/details?id=com.felipelaurindo.mobilemoneycalc" target="_blank" rel="noopener noreferrer" class="cta-link">
+                <span>Google Play Store</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Elo Gestão Psi -->
+        <article class="project-card" data-category="web">
+          <div class="project-card-header">
+            <div class="project-brand-box">
+              <img src="./assets/elo-icon.png" alt="Elo Logo" class="project-app-icon">
+              <div class="project-titles">
+                <h3 class="project-app-name">Elo (Gestão Psi)</h3>
+                <span class="project-tagline">SaaS de Rotina Clínica para Psicólogos Autônomos</span>
+              </div>
+            </div>
+            <span class="platform-pill">SaaS em Produção</span>
+          </div>
+
+          <p class="project-body-text">
+            Software web em nuvem desenvolvido para eliminar o uso de planilhas desorganizadas na gestão de consultórios de psicologia autônomos. Construído e refinado diretamente na rotina clínica da psicóloga Jenyfer Maia.
+          </p>
+
+          <ul class="project-bullets">
+            <li><strong>Prontuários Éticos CFP:</strong> Estruturação de evoluções de pacientes com foco rigoroso nas diretrizes de sigilo, armazenamento e guarda documental do Conselho Federal de Psicologia.</li>
+            <li><strong>Agenda Integrada & Financeiro:</strong> Calendário de sessões com baixa automática, conciliação de recebimentos por convênio ou particular e visão consolidada de fluxo de caixa mensal.</li>
+          </ul>
+
+          <div class="project-footer">
+            <div class="tech-tags-cloud">
+              <span class="tag-badge">React</span>
+              <span class="tag-badge">Vue.js</span>
+              <span class="tag-badge">TypeScript</span>
+              <span class="tag-badge">SaaS</span>
+              <span class="tag-badge">Sigilo Ético CFP</span>
+            </div>
+
+            <div class="project-cta-links">
+              <a href="https://elogestaopsi.vercel.app" target="_blank" rel="noopener noreferrer" class="cta-link">
+                <span>Acessar Plataforma</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         EXPERIÊNCIA PROFISSIONAL / CARREIRA
+         ==================================================================== -->
+    <section id="experiencia" class="section-area">
+      <div class="section-title-row">
+        <h2 class="section-heading">Experiência Profissional</h2>
+        <span class="section-counter">Carreira & Engenharia Corporativa</span>
+      </div>
+
+      <div class="career-timeline">
+
+        <!-- 1. Redesoft -->
+        <div class="career-item">
+          <div class="career-sidebar">
+            Agosto/2025 — Presente<br>
+            João Pessoa, PB
+          </div>
+          <div>
+            <div class="career-company-name">Redesoft</div>
+            <div class="career-role-title">Software Engineer & Systems Analyst / Backend Java & Front-End</div>
+            <p class="career-overview">
+              Atuação na análise de sistemas e desenvolvimento evolutivo do <strong>ERP B2Click</strong>, sistema corporativo de retaguarda voltado para redes de postos de combustíveis e lojas de conveniência (utilizado em mais de 200 postos no Brasil).
+            </p>
+            <ul class="career-deliveries">
+              <li><strong>Arquitetura do Módulo de Compras:</strong> Responsável técnico pelo fluxo completo de compras corporativas (solicitações, cotação com múltiplos fornecedores, conferência fiscal de NFe/XML com validação tributária de ICMS/PIS/COFINS, conferência física de recebimento e entrada automática de estoque). O módulo é utilizado de forma consistente pela alta diretoria das maiores redes clientes, que totalizam quase 200 filiais/postos. Condução periódica de apresentações técnicas e sessões de homologação com lideranças corporativas.</li>
+              <li><strong>Conciliação Financeira de Cartões:</strong> Desenvolvimento e manutenção de rotinas no backend em <strong>Java</strong> e consultas analíticas em <strong>SQL (Firebird/PostgreSQL)</strong> para processamento de layouts de grandes adquirentes (Cielo, Rede, Getnet), tratando conferência de vendas diárias das bombas contra créditos bancários, apuração de taxas contratuais (MDR) e estornos.</li>
+              <li><strong>Ponte Técnica entre POs e Engenharia (Unblocking):</strong> Atuação contínua com metodologias ágeis (Scrum/Kanban) na interface técnica com Product Owners, detalhando requisitos funcionais, escrevendo histórias de usuário com critérios de aceite (DoR/DoD), validando entregas e atuando na remoção ativa de impedimentos técnicos (unblocking) dos desenvolvedores.</li>
+              <li><strong>Qualidade, Observabilidade & RCA:</strong> Construção de testes unitários com JUnit, instrumentação de logs estruturados para monitoramento de rotinas em batch e diagnóstico de causa-raiz (RCA) de incidentes críticos em produção, atuando no mapeamento e mitigação de débitos técnicos.</li>
+              <li><strong>Engenharia Acelerada por IA:</strong> Incorporação diária de ferramentas de ponta (Claude Code, Google Antigravity, Cursor) no fluxo profissional para aceleração de código, refatoração de métodos legados, depuração de erros complexos e geração de testes.</li>
+            </ul>
+            <div class="tech-tags-cloud">
+              <span class="tag-badge">Java</span>
+              <span class="tag-badge">SQL (Firebird & PostgreSQL)</span>
+              <span class="tag-badge">Vue.js</span>
+              <span class="tag-badge">TypeScript</span>
+              <span class="tag-badge">APIs REST</span>
+              <span class="tag-badge">JUnit</span>
+              <span class="tag-badge">GitLab CI</span>
+              <span class="tag-badge">Systems Analysis</span>
+              <span class="tag-badge">ERP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Fazenda Santa Tereza / BRETE -->
+        <div class="career-item">
+          <div class="career-sidebar">
+            Janeiro/2025 — Julho/2026<br>
+            Mato Grosso do Sul
+          </div>
+          <div>
+            <div class="career-company-name">Fazenda Santa Tereza</div>
+            <div class="career-role-title">Founding Product & Software Engineer · Plataforma BRETE</div>
+            <p class="career-overview">
+              Concepção completa de produto, design de telas e engenharia de software da plataforma BRETE para manejo de bovinocultura de corte comercial (recria e engorda).
+            </p>
+            <ul class="career-deliveries">
+              <li><strong>Engenharia Offline-First Radical:</strong> Construção de arquitetura local-first em Vue 3, Pinia e <strong>IndexedDB (Dexie.js)</strong> no navegador, permitindo a gravação de centenas de pesagens com latência sub-milissegundo em ambiente hostil de curral sem sinal de internet, com sincronização em lote ao retornar ao Wi-Fi da sede.</li>
+              <li><strong>Cálculo Automático de GMD:</strong> Implementação de regras de negócio zootécnicas para cálculo instantâneo do Ganho Médio Diário na balança do tronco, reduzindo em 50% o tempo operacional e eliminando anotações manuais em papel e redigitação de planilhas.</li>
+              <li><strong>Auditoria Zootécnica & Retorno Financeiro:</strong> Emissão de relatórios técnicos em PDF que comprovaram déficit de ganho de peso no teste de sal mineral de novilhas, servindo de base empírica para o produtor reaver <strong>100 sacos gratuitos de suplemento</strong> em acordo com o fabricante.</li>
+            </ul>
+            <div class="tech-tags-cloud">
+              <span class="tag-badge">Vue 3</span>
+              <span class="tag-badge">Dexie.js (IndexedDB)</span>
+              <span class="tag-badge">Offline-First</span>
+              <span class="tag-badge">Pinia</span>
+              <span class="tag-badge">Firebase</span>
+              <span class="tag-badge">PWA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Embrapa Gado de Corte -->
+        <div class="career-item">
+          <div class="career-sidebar">
+            Outubro/2022 — Agosto/2025<br>
+            Campo Grande, MS
+          </div>
+          <div>
+            <div class="career-company-name">Embrapa — Unidade Gado de Corte</div>
+            <div class="career-role-title">Software Developer · PWA Pasto Certo</div>
+            <p class="career-overview">
+              Levantamento de requisitos, análise de sistemas e desenvolvimento no aplicativo institucional <strong>Pasto Certo</strong>, referência nacional da Embrapa para escolha técnica de cultivares forrageiras.
+            </p>
+            <ul class="career-deliveries">
+              <li><strong>Arquitetura de Micro-Frontend:</strong> Desenvolvimento modular desacoplado em Vue.js para o <strong>Calendário Digital de Manejo de Pastagens</strong>, concebido para interoperabilidade direta com órgãos estaduais de defesa agropecuária (como o <strong>IAGRO</strong>).</li>
+              <li><strong>Processamento Client-Side:</strong> Construção de rotinas no navegador para exportação de dados em planilhas Excel e relatórios analíticos em PDF sem sobrecarregar servidores de backend.</li>
+              <li><strong>Ambientes Conteinerizados:</strong> Operação prática de contêineres com <strong>Docker e Docker Compose</strong> para gerenciamento do ciclo de vida e homologação local de serviços integrados.</li>
+              <li><strong>Ergonomia em Campo:</strong> Padronização de componentes em Vuetify com foco em alto contraste para uso sob luz solar direta.</li>
+            </ul>
+            <div class="tech-tags-cloud">
+              <span class="tag-badge">Vue.js</span>
+              <span class="tag-badge">Vuetify</span>
+              <span class="tag-badge">Micro-Frontends</span>
+              <span class="tag-badge">Docker</span>
+              <span class="tag-badge">APIs REST</span>
+              <span class="tag-badge">Client-Side PDF/Excel</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Laurindo Automation & UFMS -->
+        <div class="career-item">
+          <div class="career-sidebar">
+            Março/2021 — Dezembro/2024<br>
+            Campo Grande, MS
+          </div>
+          <div>
+            <div class="career-company-name">Laurindo Automation & UFMS</div>
+            <div class="career-role-title">Engenharia de Hardware, Firmware & Baixo Nível · TCC</div>
+            <p class="career-overview">
+              Engenharia de hardware e firmware para sistemas embarcados, conectando barramentos físicos da indústria automotiva e telemetria a protocolos de software.
+            </p>
+            <ul class="career-deliveries">
+              <li><strong>TCC em Engenharia de Computação (UFMS):</strong> Projeto e confecção de placa de circuito impresso com datalogger para diagnóstico veicular via barramento CAN (ISO 11898-2) e OBD-II (SAE J1979) com orientação do Prof. Me. Fábio Iaione.</li>
+              <li><strong>Firmware em C/C++ & Barramento SPI:</strong> Integração de microcontroladores com controlador CAN MCP2515 e transceptor TJA1050 via SPI, gravando fluxo contínuo em cartão MicroSD.</li>
+              <li><strong>IoT & Automação:</strong> Desenvolvimento de scripts em Python e microcontroladores ESP32/Arduino para telemetria de sensores via protocolo MQTT e APIs REST.</li>
+            </ul>
+            <div class="tech-tags-cloud">
+              <span class="tag-badge">C / C++</span>
+              <span class="tag-badge">CAN Bus (ISO 11898-2)</span>
+              <span class="tag-badge">OBD-II (SAE J1979)</span>
+              <span class="tag-badge">Python</span>
+              <span class="tag-badge">ESP32 & Arduino</span>
+              <span class="tag-badge">SPI & MQTT</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         STACK & PRINCÍPIOS DE ENGENHARIA
+         ==================================================================== -->
+    <section class="section-area">
+      <div class="section-title-row">
+        <h2 class="section-heading">Stack Técnica & Heurísticas de Engenharia</h2>
+        <span class="section-counter">Tecnologias & Princípios Inegociáveis</span>
+      </div>
+
+      <div class="stack-grid-2col">
+        <div class="stack-box">
+          <div class="stack-group-heading">Mobile Nativo & Multiplataforma</div>
+          <div class="tech-tags-cloud">
+            <span class="tag-badge">Flutter (Dart)</span>
+            <span class="tag-badge">Kotlin (Android Nativo)</span>
+            <span class="tag-badge">Jetpack Compose</span>
+            <span class="tag-badge">Riverpod</span>
+            <span class="tag-badge">Clean Architecture</span>
+            <span class="tag-badge">SQLite / Hive</span>
+          </div>
+
+          <div class="stack-group-heading">Front-End Web & Sistemas Reativos</div>
+          <div class="tech-tags-cloud">
+            <span class="tag-badge">Vue.js (Vue 2 & 3)</span>
+            <span class="tag-badge">TypeScript</span>
+            <span class="tag-badge">JavaScript (ES6+)</span>
+            <span class="tag-badge">React (Hooks / Vite)</span>
+            <span class="tag-badge">Pinia</span>
+            <span class="tag-badge">Tailwind CSS</span>
+            <span class="tag-badge">Dexie.js (IndexedDB)</span>
+            <span class="tag-badge">Micro-Frontends</span>
+          </div>
+
+          <div class="stack-group-heading">Backend, Banco de Dados & Qualidade</div>
+          <div class="tech-tags-cloud">
+            <span class="tag-badge">Java</span>
+            <span class="tag-badge">SQL (PostgreSQL, Firebird, MySQL)</span>
+            <span class="tag-badge">APIs REST / RESTful</span>
+            <span class="tag-badge">JUnit</span>
+            <span class="tag-badge">JSON & XML (NFe)</span>
+            <span class="tag-badge">Firebase (Auth/Firestore)</span>
+          </div>
+
+          <div class="stack-group-heading">Baixo Nível, Cloud & DevOps</div>
+          <div class="tech-tags-cloud">
+            <span class="tag-badge">C / C++</span>
+            <span class="tag-badge">CAN Bus (ISO 11898-2)</span>
+            <span class="tag-badge">Docker & Docker Compose</span>
+            <span class="tag-badge">Git & GitLab CI</span>
+            <span class="tag-badge">GitHub Actions</span>
+            <span class="tag-badge">AWS (CloudWatch, S3)</span>
+          </div>
+        </div>
+
+        <div class="stack-box">
+          <div class="principles-list">
+            <div class="principle-item">
+              <strong>1. Offline-First por Princípio</strong>
+              <p>Conexão com a rede é um benefício transitório. As interfaces devem ser desenhadas para persistir dados primeiro no armazenamento local (IndexedDB/SQLite) com tempo de resposta sub-milissegundo e sincronizar de forma assíncrona ao restabelecer rede.</p>
+            </div>
+
+            <div class="principle-item">
+              <strong>2. Ergonomia Operacional & Baixa Latência</strong>
+              <p>Interfaces operadas em frentes de caixa, balcões ou sob a luz do sol exigem tipografia nítida, alto contraste, teclados otimizados e zero cliques supérfluos para quem opera sob pressão de fila.</p>
+            </div>
+
+            <div class="principle-item">
+              <strong>3. Da Física ao Software</strong>
+              <p>Compreender o funcionamento de registradores, microcontroladores e barramentos físicos orienta a construção de código web e mobile enxuto, prevenindo vazamentos de memória e gargalos de thread.</p>
+            </div>
+
+            <div class="principle-item">
+              <strong>4. Engenharia Aumentada por IA</strong>
+              <p>Uso contínuo de ferramentas avançadas de IA (Claude Code, Google Antigravity, Cursor) como esteira de produtividade diária para acelerar refatorações, isolar causa-raiz de bugs complexos e elevar cobertura de testes unitários.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         FORMAÇÃO ACADÊMICA & IDIOMAS
+         ==================================================================== -->
+    <section class="section-area">
+      <div class="section-title-row">
+        <h2 class="section-heading">Formação Acadêmica & Idiomas</h2>
+      </div>
+
+      <div class="education-languages-grid">
+        <div class="edu-card">
+          <div class="edu-entry">
+            <div class="edu-degree">Bacharelado em Engenharia de Computação</div>
+            <div class="edu-institution">Universidade Federal de Mato Grosso do Sul (UFMS) · 2018 – 2023</div>
+            <p class="edu-notes">Formação completa em arquitetura de computadores, sistemas operacionais, banco de dados e algoritmos. TCC em Datalogger veicular com barramento CAN (ISO 11898-2) e OBD-II (SAE J1979).</p>
+          </div>
+
+          <div class="edu-entry">
+            <div class="edu-degree">Engenharia Civil (Graduação Prévia — 4 anos)</div>
+            <div class="edu-institution">UFMS · 2014 – 2018</div>
+            <p class="edu-notes">Sólida formação em cálculo diferencial e integral, física aplicada, estruturas e raciocínio lógico-espacial antes da transição consciente para a computação.</p>
+          </div>
+
+          <div class="edu-entry">
+            <div class="edu-degree">Certificações Profissionais</div>
+            <p class="edu-notes" style="margin-top: 4px;">
+              • <strong>UX & Design Thinking: Experiência do Usuário nos Negócios</strong> — Udemy (2026 · ID: UC-269e9e11-e40d-4f11-9a7c-54a72d7f955d)<br>
+              • <strong>HCIA-AI V3.0 (Huawei Certified ICT Associate)</strong> — Huawei (2021)<br>
+              • <strong>Modelagem de Banco de Dados</strong> — Fundação Bradesco (2021)
+            </p>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="lang-list">
+            <div class="lang-item">
+              <span class="lang-title">Inglês</span>
+              <span class="lang-proficiency">Avançado / Fluente</span>
+            </div>
+            <div class="lang-item">
+              <span class="lang-title">Português</span>
+              <span class="lang-proficiency">Nativo (Comunicação técnica e executiva)</span>
+            </div>
+            <div class="lang-item">
+              <span class="lang-title">Italiano</span>
+              <span class="lang-proficiency">Intermediário</span>
+            </div>
+            <div class="lang-item">
+              <span class="lang-title">Alemão</span>
+              <span class="lang-proficiency">Básico</span>
+            </div>
+            <div class="lang-item">
+              <span class="lang-title">Espanhol</span>
+              <span class="lang-proficiency">Básico</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         RODAPÉ OFICIAL & COMPLIANCE
+         ==================================================================== -->
+    <footer class="site-footer">
       <div>
-        © 2026 Central de Privacidade e Termos de Uso. Todos os direitos reservados.
+        Felipe Matheus Laurindo de Oliveira · 2026
       </div>
-    </div>
-  </footer>
+
+      <div class="footer-links-group">
+        <a href="./privacidade.html">Central de Privacidade &amp; Termos de Serviço</a>
+        <a href="https://github.com/felipematheuslo" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/felipe-laurindo" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:felipe.m.laurindo@gmail.com">Contato</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <div id="copyToastNotice" class="toast-notice">E-mail copiado para a área de transferência!</div>
+
+  <!-- ====================================================================
+       SCRIPTS: FILTROS DE PROJETOS, TEMA E COPIAR E-MAIL
+       ==================================================================== -->
+  <script>
+    // 1. Filtro Dinâmico de Projetos
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        projectCards.forEach(card => {
+          if (filter === 'all') {
+            card.style.display = 'block';
+          } else {
+            const categories = card.getAttribute('data-category').split(' ');
+            if (categories.includes(filter)) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          }
+        });
+      });
+    });
+
+    // 2. Alternador de Tema Escuro / Claro com Persistência
+    const themeBtn = document.getElementById('themeToggleBtn');
+    const sunSvg = document.getElementById('sunIcon');
+    const moonSvg = document.getElementById('moonIcon');
+
+    function setTheme(isLight) {
+      if (isLight) {
+        document.body.classList.add('light-theme');
+        sunSvg.style.display = 'block';
+        moonSvg.style.display = 'none';
+      } else {
+        document.body.classList.remove('light-theme');
+        sunSvg.style.display = 'none';
+        moonSvg.style.display = 'block';
+      }
+    }
+
+    const currentSavedTheme = localStorage.getItem('theme');
+    if (currentSavedTheme === 'light') {
+      setTheme(true);
+    } else {
+      setTheme(false);
+    }
+
+    themeBtn.addEventListener('click', () => {
+      const isLightNow = document.body.classList.contains('light-theme');
+      const nextThemeIsLight = !isLightNow;
+      setTheme(nextThemeIsLight);
+      localStorage.setItem('theme', nextThemeIsLight ? 'light' : 'dark');
+    });
+
+    // 3. Copiar E-mail com Toast
+    function copyEmailAddress() {
+      const email = 'felipe.m.laurindo@gmail.com';
+      navigator.clipboard.writeText(email).then(() => {
+        const toast = document.getElementById('copyToastNotice');
+        toast.classList.add('visible');
+        setTimeout(() => toast.classList.remove('visible'), 2500);
+      });
+    }
+  </script>
 
 </body>
 </html>

@@ -255,20 +255,18 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.8rem;
-  background: linear-gradient(135deg, #FFF3ED 0%, #FED7AA 100%);
-  border: 1px solid var(--color-brand-border);
-  flex-shrink: 0;
-}
-
-.app-icon.neutral {
   background: var(--stone-100);
-  border-color: var(--stone-200);
+  border: 1px solid var(--stone-200);
+  flex-shrink: 0;
+  overflow: hidden;
+  padding: 4px;
 }
 
 .app-icon img {
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
+  border-radius: 10px;
   display: block;
 }
 
@@ -300,6 +298,25 @@ body {
   gap: 8px;
   padding-top: 14px;
   border-top: 1px solid var(--stone-100);
+}
+
+.app-card-sublink {
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--stone-400);
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+.app-card-sublink.danger {
+  color: var(--color-rose);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.app-card-sublink.danger:hover {
+  color: #BE123C;
 }
 
 .btn {
